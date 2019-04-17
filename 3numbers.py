@@ -1,12 +1,12 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-c = int(input("Enter third number: "))
+first= int(input("Enter first number: "))
+second= int(input("Enter second number: "))
+third= int(input("Enter third number: "))
  
-if (a > b) and (a > c):
-   largest = a
-elif (b > a) and (b > c):
-   largest = b
+if (first > second) and (first > third):
+   maximum = first
+elif (second > first) and (second > thrid):
+   maximum = second
 else:
-   largest = c
+   maximum = thrid
  
-print("The largest number is",largest)
+print("The largest number is",maximum)
