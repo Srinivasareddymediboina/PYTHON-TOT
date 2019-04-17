@@ -4,9 +4,9 @@ third= int(input("Enter third number: "))
  
 if (first > second) and (first > third):
    maximum = first
-elif (second > first) and (second > thrid):
+elif (second > first) and (second > third):
    maximum = second
 else:
-   maximum = thrid
+   maximum = third
  
 print("The largest number is",maximum)
