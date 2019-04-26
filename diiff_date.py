@@ -1,12 +1,16 @@
-from datetime import date
-y=int(input("enter the year"))
-m=int(input("enter the month"))
-d=int(input("enter the day"))
-y1=int(input("enter the year"))
-m1=int(input("enter the month"))
-d1=int(input("enter the day")
-from_date = date(y, m, d)
+# import datetime Module
+from datetime import datetime as dt 
+d1=input('enter date in YY-MM-DD:').strip()
+d2=input('enter date in YY-MM-DD:').strip()
+# date format
+format= "%Y-%m-%d" 
 
-to_date = date(y1, m1, d1)
-x = to_date - from_date
-print(x.days, "days")
+def datedifference(date1, date2): 
+        try:
+                d1 = dt .strptime(date1,format)
+                d2 = dt.strptime(date2, format)
+        except Exception as e:
+                print(e)
+                return e
+        return (d2 - d1)
+print(datedifference(d1,d2))
